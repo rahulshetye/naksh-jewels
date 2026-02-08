@@ -16,7 +16,5 @@ RUN npm install -g serve
 
 COPY --from=build /app/build ./build
 
-ENV PORT=8080
 EXPOSE 8080
-
-CMD ["serve", "-s", "build", "-l", "8080"]
+CMD serve -s build -l 8080
