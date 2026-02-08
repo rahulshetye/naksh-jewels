@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: naksh-backend
+    ports:
+      - "5010:5010"
+
+  frontend:
+    build: ./frontend
+    container_name: naksh-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
