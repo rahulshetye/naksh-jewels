@@ -5,7 +5,7 @@ It demonstrates real-world frontend development, backend API design, state manag
 
 ---
 
-## 🚀 Live Deployment (Production)
+##  Live Deployment (Production)
 
 The application is fully deployed using **Railway**, with separate Dockerized services for the frontend and backend.
 
@@ -19,7 +19,7 @@ This deployment was done to showcase real-world DevOps readiness beyond local de
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React (Functional Components only)
@@ -40,7 +40,7 @@ This deployment was done to showcase real-world DevOps readiness beyond local de
 
 ---
 
-## 📦 Features
+##  Features
 
 ### Frontend
 - Product listing page
@@ -57,7 +57,7 @@ This deployment was done to showcase real-world DevOps readiness beyond local de
 
 ---
 
-## 🐳 Docker Setup (Mandatory)
+##  Docker Setup 
 
 ### Run Locally Using Docker
 
