@@ -63,3 +63,33 @@ This deployment was done to showcase real-world DevOps readiness beyond local de
 
 ```bash
 docker-compose up --build
+```
+
+⚙ Environment Variables
+Backend (.env)
+PORT=5010
+Frontend
+REACT_APP_API_URL=http://localhost:5010
+📁 Project Structure
+naksh-jewels/
+├── frontend/
+│   ├── Dockerfile
+│   ├── src/
+│   └── package.json
+├── backend/
+│   ├── Dockerfile
+│   ├── routes/
+│   ├── middleware/
+│   ├── index.js
+│   └── package.json
+├── docker-compose.yml
+└── README.md
+
+Note
+Only functional React components are used
+No third-party UI libraries
+Fully Dockerized frontend and backend
+Production deployment included
+
+Author
+Rahul Shetye
