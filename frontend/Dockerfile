@@ -1,12 +1,22 @@
-FROM node:18-alpine
-
+# Build stage
+FROM node:18-alpine AS build
 WORKDIR /app
 
 COPY package*.json ./
 RUN npm install
 
 COPY . .
+RUN npm run build
 
-EXPOSE 3000
+# Production stage
+FROM node:18-alpine
+WORKDIR /app
 
-CMD ["npm", "start"]
+RUN npm install -g serve
+
+COPY --from=build /app/build ./build
+
+ENV PORT=8080
+EXPOSE 8080
+
+CMD ["serve", "-s", "build", "-l", "8080"]
